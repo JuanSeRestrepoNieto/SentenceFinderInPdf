@@ -8,3 +8,6 @@
 %template(VectorVectorDouble) std::vector<std::vector<double>>;
 
 %include "ball_tree.h"
+
+// Exponer la clase BallTree a Python
+%feature("director") BallTree;
